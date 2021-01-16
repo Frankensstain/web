@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">IT Кропива</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav " role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" data-toggle="pill" href="#list">Аніме</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" data-toggle="pill" href="#menu2">Атака Титанів</a>
+                </li>
+                >
+            </ul>
+            <div class="ml-auto mr-0">
+                <form class="form-inline" action="/action_page.php">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-success">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tab-content">
+        <div id="home" class="content-block container tab-pane active">
+            <div class="row m-1">
+                <div class="col-12 d-none d-sm-block d-md-none">
+                    <button class="btn btn-primary align-center" type="button" data-toggle="collapse"
+                        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Показати фільт
+                    </button>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body" id="checkboxes">
+
+                            <div class="block mt-4">
+                                <div class="ml-3">Статус</div>
+                                <ul>
+                                    <li><input type="checkbox"> анонсований</li>
+                                    <li><input type="checkbox"> Зараз виходить</li>
+                                    <li><input type="checkbox"> Вийшов</li>
+                                    <li><input type="checkbox"> Недавно вийшов</li>
+
+                                </ul>
+                            </div>
+
+                            <div class="block mt-4">
+                                <div class="ml-3">Тип</div>
+                                <ul>
+                                    <li><input type="checkbox"> Коротке</li>
+                                    <li><input type="checkbox"> Довге</li>
+                                    <li><input type="checkbox"> Середнє</li>
+                                    <li><input type="checkbox"> Фільм</li>
+                                    <li><input type="checkbox"> Спешл</li>
+                                    <li><input type="checkbox"> OVA</li>
+                                    <li><input type="checkbox"> ONA</li>
+                                </ul>
+                            </div>
+
+                            <div class="block mt-4">
+                                <div class="ml-3">Сезон</div>
+                                <ul>
+                                    <li><input type="checkbox"> Весна 2021</li>
+                                    <li><input type="checkbox"> Зима 2020</li>
+                                    <li><input type="checkbox"> Осінь 2020</li>
+                                    <li><input type="checkbox"> Літо 2020</li>
+                                    <li><input type="checkbox"> 2021</li>
+                                    <li><input type="checkbox"> 2020</li>
+                                    <li><input type="checkbox"> 2018-2019</li>
+                                    <li><input type="checkbox"> 2013-2017</li>
+                                    <li><input type="checkbox"> 2000-2013</li>
+                                    <li><input type="checkbox"> ...-2000</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12  mt-4 d-none d-md-block">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <div class="container row ">
+                                    <div class="col-2 mx-auto"><img class="d-block " src="src/img/4.jpg"
+                                            alt="First slide" style="height: 290px;"></div>
+                                    <div class="col-2 mx-auto"><img class="d-block " src="src/img/5.jpg"
+                                            alt="First slide" style="height: 290px;"></div>
+                                    <div class="col-2 mx-auto"><img class="d-block " src="src/img/6.jpg"
+                                            alt="First slide" style="height: 290px;"></div>
+                                    <div class="col-2 mx-auto"><img class="d-block " src="src/img/1.jpg"
+                                            alt="First slide" style="height: 290px;"></div>
+                                    <div class="col-2 mx-auto d-none d-lg-block"><img class="d-block "
+                                            src="src/img/2.jpg" alt="First slide" style="height: 290px;"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item active ">
+                                <div class="container row ">
+                                    <div class="col-2 mx-auto"><img class="d-block " src="src/img/1.jpg"
+                                            alt="First slide" style="height: 290px;"></div>
+                                    <div class="col-2 mx-auto"><img class="d-block " src="src/img/2.jpg"
+                                            alt="First slide" style="height: 290px;"></div>
+                                    <div class="col-2 mx-auto"><img class="d-block " src="src/img/3.jpg"
+                                            alt="First slide" style="height: 290px;"></div>
+                                    <div class="col-2 mx-auto"><img class="d-block " src="src/img/5.jpg"
+                                            alt="First slide" style="height: 290px;"></div>
+                                    <div class="col-2 mx-auto  d-none d-lg-block"><img class="d-block "
+                                            src="src/img/6.jpg" alt="First slide" style="height: 290px;"></div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="container row ">
+                                    <div class="col-2 mx-auto"><img class="d-block " src="src/img/7.jpg"
+                                            alt="First slide" style="height: 290px;"></div>
+                                    <div class="col-2 mx-auto"><img class="d-block " src="src/img/1.jpg"
+                                            alt="First slide" style="height: 290px;"></div>
+                                    <div class="col-2 mx-auto"><img class="d-block " src="src/img/2.jpg"
+                                            alt="First slide" style="height: 290px;"></div>
+                                    <div class="col-2 mx-auto"><img class="d-block " src="src/img/3.jpg"
+                                            alt="First slide" style="height: 290px;"></div>
+                                    <div class="col-2 mx-auto  d-none d-lg-block"><img class="d-block "
+                                            src="src/img/7.jpg" alt="First slide" style="height: 290px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <a class="carousel-control-next " href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-sm-12">
+
+                    <div class="row">
+
+
+                        <div class="col-12 my-4">
+                            <div class=" row">
+
+                                <div class="col-md-5 mx-3">
+                                    <div class="border">
+                                        <form action="action_page.php">
+                                            <div class="container">
+                                                <h1>Register</h1>
+                                                <p>Please fill in this form to create an account.</p>
+                                                <hr>
+
+                                                <label for="email"><b>Email</b></label>
+                                                <input type="text" placeholder="Enter Email" name="email" id="email"
+                                                    required>
+
+                                                <label for="psw"><b>Password</b></label>
+                                                <input type="password" placeholder="Enter Password" name="psw" id="psw"
+                                                    required>
+
+                                                <label for="psw-repeat"><b>Repeat Password</b></label>
+                                                <input type="password" placeholder="Repeat Password" name="psw-repeat"
+                                                    id="psw-repeat" required>
+                                                <hr>
+
+                                                <p>By creating an account you agree to our <a href="#">Terms &
+                                                        Privacy</a>.
+                                                </p>
+                                                <button type="submit" class="registerbtn">Register</button>
+                                            </div>
+
+                                            <div class="container signin">
+                                                <p>Already have an account? <a href="#">Sign in</a>.</p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="text-center m-4">
+                                        мені ліньки придумувати що тут має бути тому тут буде просто хлам з кнопочками і
+                                        тд
+                                    </div>
+                                    <div><a class="btn btn-outline-secondary btn-lg btn-block m-2" >Перейти на першу сторінку</a></div>
+                                    <div><a class="btn btn-outline-secondary btn-lg btn-block m-2" >Перейти на другу сторінку</a></div>
+                                    <div><a class="btn btn-outline-secondary btn-lg btn-block m-2" >Перейти на третю сторінку</a></div>
+                                    <div><a class="btn btn-outline-secondary btn-lg btn-block m-2" >Перейти на четвертку сторінку</a></div>
+                                    <div><a class="btn btn-outline-secondary btn-lg btn-block m-2" >Перейти на п'яту сторінку</a></div>
+                                    <div><a class="btn btn-outline-secondary btn-lg btn-block m-2" >Перейти на ще якусь сторінку</a></div>
+                                    <div><a class="btn btn-outline-secondary btn-lg btn-block m-2" >Перейти на фіг зна яку сторінку</a></div>
+                                    <div><a class="btn btn-outline-secondary btn-lg btn-block m-2" >Перейти просто на сторінку</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mx-3 mt-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    Анонс нового супер пупер аніме, яке ніхто дивитися не буде
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
+                                            a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante.</p>
+
+                                    </blockquote>
+                                    <div class="row">
+                                        <div class="mx-auto">
+                                            <img src="src/img/1.jpg " height="200px">
+                                            <img src="src/img/2.jpg " height="200px">
+                                        </div>
+                                    </div>
+                                    <footer class="blockquote-footer text-right">Опубліковано о 14:00</footer>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 m-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    Панду поїздом збило
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
+                                            a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                            posuere erat
+                                            a ante.</p>
+
+                                    </blockquote>
+
+                                    <div class="row">
+                                        <div class="mx-auto">
+                                            <img src="src/img/1.jpg " height="200px">
+                                            <img src="src/img/2.jpg " height="200px">
+                                            <img src="src/img/3.jpg " height="200px">
+                                            <img src="src/img/4.jpg " height="200px">
+                                            <img src="src/img/6.jpg " height="200px">
+
+                                        </div>
+                                    </div>
+                                    <footer class="blockquote-footer text-right mt-2">Опубліковано о 13:00</footer>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="col-3">
+                    <div class="d-none d-md-block" id="collapseExample">
+                        <div class="row" id="checkboxes">
+
+                            <div class="block col-12 mt-4">
+                                <div class="ml-3">Статус</div>
+                                <ul>
+                                    <li><input type="checkbox"> анонсований</li>
+                                    <li><input type="checkbox"> Зараз виходить</li>
+                                    <li><input type="checkbox"> Вийшов</li>
+                                    <li><input type="checkbox"> Недавно вийшов</li>
+
+                                </ul>
+                            </div>
+
+                            <div class="block col-12 mt-4">
+                                <div class="ml-3">Тип</div>
+                                <ul>
+                                    <li><input type="checkbox"> Коротке</li>
+                                    <li><input type="checkbox"> Довге</li>
+                                    <li><input type="checkbox"> Середнє</li>
+                                    <li><input type="checkbox"> Фільм</li>
+                                    <li><input type="checkbox"> Спешл</li>
+                                    <li><input type="checkbox"> OVA</li>
+                                    <li><input type="checkbox"> ONA</li>
+                                </ul>
+                            </div>
+
+                            <div class="block col-12 mt-4">
+                                <div class="ml-3">Сезон</div>
+                                <ul>
+                                    <li><input type="checkbox"> Весна 2021</li>
+                                    <li><input type="checkbox"> Зима 2020</li>
+                                    <li><input type="checkbox"> Осінь 2020</li>
+                                    <li><input type="checkbox"> Літо 2020</li>
+                                    <li><input type="checkbox"> 2021</li>
+                                    <li><input type="checkbox"> 2020</li>
+                                    <li><input type="checkbox"> 2018-2019</li>
+                                    <li><input type="checkbox"> 2013-2017</li>
+                                    <li><input type="checkbox"> 2000-2013</li>
+                                    <li><input type="checkbox"> ...-2000</li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="list" class="content-block container tab-pane fade">
+
+            <div class="row m-1">
+                <div class="col-12 d-none d-sm-block d-md-none">
+                    <button class="btn btn-primary align-center" type="button" data-toggle="collapse"
+                        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Показати фільт
+                    </button>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body" id="checkboxes">
+
+                            <div class="block mt-4">
+                                <div class="ml-3">Статус</div>
+                                <ul>
+                                    <li><input type="checkbox"> анонсований</li>
+                                    <li><input type="checkbox"> Зараз виходить</li>
+                                    <li><input type="checkbox"> Вийшов</li>
+                                    <li><input type="checkbox"> Недавно вийшов</li>
+
+                                </ul>
+                            </div>
+
+                            <div class="block mt-4">
+                                <div class="ml-3">Тип</div>
+                                <ul>
+                                    <li><input type="checkbox"> Коротке</li>
+                                    <li><input type="checkbox"> Довге</li>
+                                    <li><input type="checkbox"> Середнє</li>
+                                    <li><input type="checkbox"> Фільм</li>
+                                    <li><input type="checkbox"> Спешл</li>
+                                    <li><input type="checkbox"> OVA</li>
+                                    <li><input type="checkbox"> ONA</li>
+                                </ul>
+                            </div>
+
+                            <div class="block mt-4">
+                                <div class="ml-3">Сезон</div>
+                                <ul>
+                                    <li><input type="checkbox"> Весна 2021</li>
+                                    <li><input type="checkbox"> Зима 2020</li>
+                                    <li><input type="checkbox"> Осінь 2020</li>
+                                    <li><input type="checkbox"> Літо 2020</li>
+                                    <li><input type="checkbox"> 2021</li>
+                                    <li><input type="checkbox"> 2020</li>
+                                    <li><input type="checkbox"> 2018-2019</li>
+                                    <li><input type="checkbox"> 2013-2017</li>
+                                    <li><input type="checkbox"> 2000-2013</li>
+                                    <li><input type="checkbox"> ...-2000</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-12">
+                    <div class="row">
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto ">
+                            <div class="card border-0">
+                                <img src="src/img/1.jpg " class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Атака титанов: Финал </h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/2.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Re:Zero. Жизнь с нуля в альтернативном мире 2
+                                        </h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/3.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Граффити Холо</h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/4.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Хоримия</h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/5.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Магическая битва </h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/6.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Обещанный Неверленд 2</h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/7.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Доктор Стоун: Каменные войны</h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto ">
+                            <div class="card border-0">
+                                <img src="src/img/1.jpg " class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Атака титанов: Финал </h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/2.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Re:Zero. Жизнь с нуля в альтернативном мире 2
+                                        </h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/3.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Граффити Холо</h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/4.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Хоримия</h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/5.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Магическая битва </h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/6.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Обещанный Неверленд 2</h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/7.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Доктор Стоун: Каменные войны</h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto ">
+                            <div class="card border-0">
+                                <img src="src/img/1.jpg " class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Атака титанов: Финал </h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/2.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Re:Zero. Жизнь с нуля в альтернативном мире 2
+                                        </h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/3.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Граффити Холо</h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/4.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Хоримия</h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-sm-6 mt-2 mx-auto">
+                            <div class="card border-0">
+                                <img src="src/img/5.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <a class="card-text text-capitalize ">Магическая битва </h5>
+                                        <div><a class="text-info mt-2">Коротка Інформація</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-3">
+
+                    <div class="d-none d-md-block" id="collapseExample">
+                        <div class="row" id="checkboxes">
+
+                            <div class="block col-12 mt-4">
+                                <div class="ml-3">Статус</div>
+                                <ul>
+                                    <li><input type="checkbox"> анонсований</li>
+                                    <li><input type="checkbox"> Зараз виходить</li>
+                                    <li><input type="checkbox"> Вийшов</li>
+                                    <li><input type="checkbox"> Недавно вийшов</li>
+
+                                </ul>
+                            </div>
+
+                            <div class="block col-12 mt-4">
+                                <div class="ml-3">Тип</div>
+                                <ul>
+                                    <li><input type="checkbox"> Коротке</li>
+                                    <li><input type="checkbox"> Довге</li>
+                                    <li><input type="checkbox"> Середнє</li>
+                                    <li><input type="checkbox"> Фільм</li>
+                                    <li><input type="checkbox"> Спешл</li>
+                                    <li><input type="checkbox"> OVA</li>
+                                    <li><input type="checkbox"> ONA</li>
+                                </ul>
+                            </div>
+
+                            <div class="block col-12 mt-4">
+                                <div class="ml-3">Сезон</div>
+                                <ul>
+                                    <li><input type="checkbox"> Весна 2021</li>
+                                    <li><input type="checkbox"> Зима 2020</li>
+                                    <li><input type="checkbox"> Осінь 2020</li>
+                                    <li><input type="checkbox"> Літо 2020</li>
+                                    <li><input type="checkbox"> 2021</li>
+                                    <li><input type="checkbox"> 2020</li>
+                                    <li><input type="checkbox"> 2018-2019</li>
+                                    <li><input type="checkbox"> 2013-2017</li>
+                                    <li><input type="checkbox"> 2000-2013</li>
+                                    <li><input type="checkbox"> ...-2000</li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
